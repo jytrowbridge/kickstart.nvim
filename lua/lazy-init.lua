@@ -28,6 +28,7 @@ require('lazy').setup {
   spec = {
     { import = 'kickstart.plugins.base' },
     { import = 'custom.plugins' },
-    require 'kickstart.plugins.extras.neo-tree',
+    -- require 'kickstart.plugins.extras.neo-tree',
+    require 'kickstart.plugins.extras.autopairs',
   },
 }
