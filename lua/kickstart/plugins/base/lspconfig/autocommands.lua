@@ -28,6 +28,13 @@ local function createAutocommands(event)
       end,
     })
   end
+  -- if client and client_supports_method(client, 'textDocument/hover', event.buf) then
+  --   local hover_group = vim.api.nvim_create_augroup('lsp_attach_disable_ruff_hover', { clear = true })
+  --   if client.name == 'ruff' then
+  --     -- Disable hover in favor of Pyright
+  --     client.server_capabilities.hoverProvider = false
+  --   end
+  -- end
 end
 
 return createAutocommands

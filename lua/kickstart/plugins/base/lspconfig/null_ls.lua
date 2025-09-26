@@ -1,9 +1,9 @@
 local m = {}
 
 m.mason_dependencies = {
-  { 'black' },
+  -- { 'black' },
   { 'isort' },
-  { 'pylint' },
+  -- { 'pylint' },
 }
 
 m.configure = function()
@@ -11,9 +11,9 @@ m.configure = function()
   nl.setup {
     sources = {
       nl.builtins.formatting.stylua,
-      nl.builtins.formatting.black,
+      -- nl.builtins.formatting.black,
       nl.builtins.formatting.isort,
-      nl.builtins.diagnostics.pylint,
+      -- nl.builtins.diagnostics.pylint,
     },
   }
 end
