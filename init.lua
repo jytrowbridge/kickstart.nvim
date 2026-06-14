@@ -6,6 +6,9 @@ vim.g.maplocalleader = ' '
 
 vim.g.have_nerd_font = true
 
+-- vim.g.loaded_netrw = 0
+-- vim.g.loaded_netrwPlugin = 0
+
 require 'options'
 require 'keymaps'
 require 'autocommands'

@@ -36,3 +36,19 @@ vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper win
 -- vim.keymap.set("n", "<C-S-l>", "<C-w>L", { desc = "Move window to the right" })
 -- vim.keymap.set("n", "<C-S-j>", "<C-w>J", { desc = "Move window to the lower" })
 -- vim.keymap.set("n", "<C-S-k>", "<C-w>K", { desc = "Move window to the upper" })
+--
+--
+
+-- vim.g.vim_markdown_no_default_key_mappings = 1
+-- vim.keymap.set('n', 'gx', function()
+--   local file = vim.fn.expand '<cfile>'
+--   if file:match 'http[s]?://' then
+--     -- It's a URL
+--     vim.fn.jobstart({ 'xdg-open', file }, { detach = true }) -- Linux
+--     -- vim.fn.jobstart({'open', file}, {detach = true})  -- macOS
+--     -- vim.cmd('!start ' .. file)  -- Windows
+--   else
+--     -- It's a file path
+--     vim.cmd('edit ' .. file)
+--   end
+-- end, { desc = 'Open file/URL under cursor' })
